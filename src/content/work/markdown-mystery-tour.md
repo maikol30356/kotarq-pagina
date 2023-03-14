@@ -1,14 +1,13 @@
 ---
-title: Markdown Mystery Tour
+title: KOTARQ LA VACA
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img: /assets/proyecto-1.png
+img_alt: kotarq la vaca mayor 
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  kotarq
 tags:
   - Design
   - Dev
-  - User Testing
 ---
 
 ## Level-two heading

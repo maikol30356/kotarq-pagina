@@ -25,27 +25,27 @@ const projects = (await getCollection('work'))
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<BaseLayout>
+<BaseLayout title="KOTARQ Pagina Oficial" description="Pagina Principal del Sitio Web de la Vaca Suprema">
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hola, Mi Nombre es KOTARQ"
+					tagline="Streamer y Modelador 3D"
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="twitch-logo" size="1.33em" />Streamer</Pill>
+						<Pill><Icon icon="3d-logo" size="1.33em" />Modelador 3D</Pill>
+						<Pill><Icon icon="controller-logo" size="1.33em" />Pro Player de Celeste</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="kotarq haciendo una seña"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/kotarq.png"
 				/>
 			</header>
 
@@ -55,8 +55,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3> Trabajos seleccionados</h3>
+					<p>Echa un vistaso a mis MEJORES trabajos.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,33 +73,13 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Ver Mas!
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
+			
 		</main>
 
 		<ContactCTA />
@@ -219,6 +199,7 @@ const projects = (await getCollection('work'))
 
 		.gallery {
 			grid-area: gallery;
+			padding: 300px 0 300px 0;
 		}
 
 		.cta {
